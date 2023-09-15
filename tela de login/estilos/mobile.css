@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@media screen and (max-width:600px) {
+   main#container{
+    height:400px ;
+    width: 300px;
+    grid-template-columns:300px ;
+    grid-template-rows: 170px 1fr;
+    grid-template-areas: "imagem" "formulario";
+   }
+   #formulario{
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: 1fr 1fr;
+   }
+   form{
+    align-self: start;
+   }
+   #formulario>form>h2{
+    font-size: 25px;
+    margin: 10px;
+   }
+   input{
+    width: 120px;
+   }
+   button{
+    margin: 0px;
+    height: 30px;
+    
+   }
+   nav{
+    margin-top: 10px;
+   }
+}
