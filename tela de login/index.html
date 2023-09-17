@@ -18,7 +18,7 @@
                 <h2>Account login</h2>
             <input type="text" placeholder="Username" autocomplete="username" id="user"><input type="password" placeholder="Passoword" autocomplete="current-password" id="senha">
         </form>
-        <button type="submit" onclick="validacao_do_Formulario()">Sign in</button>
+        <button type="submit" onclick="validacao_do_Formulario() " id="botao">Sign in</button>
        <nav>
         <p>forgot <a href="#">Username/</a><a href="#">Passoword?</a></p>
        </nav>
@@ -30,7 +30,11 @@
                 var senha = document.getElementById("senha").value;
                 if(user == "" || senha == ""){
                     alert("Digite o campo em branco")
+                    document.getElementById("user").style.border="1px solid red";
+                    document.getElementById("senha").style.border="1px solid red";
+                    document.getElementById("botao").style.border="1px solid red";
                 }
+            
             }
         </script>
     </main>
