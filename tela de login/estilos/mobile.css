@@ -7,6 +7,7 @@
     grid-template-columns:1fr ;
     grid-template-rows: 180px 1fr;
     grid-template-areas: "imagem" "formulario";
+    animation: animação 0.5s linear;
    }
    #formulario{
     display: grid;
@@ -24,6 +25,11 @@
     
     margin-top: 15px;
     height: 38px;
+    animation: animação 1.2s linear;
+  }
+  @keyframes animação {
+    from{opacity: 0;}
+    to{opacity: 1;}
   }
 input{
     height: 38px;
