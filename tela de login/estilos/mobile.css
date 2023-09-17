@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @media screen and (max-width:600px) {
    main#container{
+    transition: width 1s, height 1s;
     height: 530px ;
     width: 300px;
     grid-template-columns:1fr ;
